@@ -1,0 +1,7 @@
+server
+tests/test_game
+users.conf
+*.log
+__pycache__/
+.DS_Store
+*.pem

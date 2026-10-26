@@ -1,0 +1,8 @@
+name: C server and TCP tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: make CFLAGS='-std=c11 -O2 -Wall -Wextra -Wpedantic -Werror' test

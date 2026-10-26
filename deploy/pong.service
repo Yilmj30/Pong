@@ -1,0 +1,23 @@
+[Unit]
+Description=Pong authoritative TCP server
+After=network.target
+
+[Service]
+Type=simple
+User=pong
+Group=pong
+WorkingDirectory=/opt/pong
+Environment=PONG_USERS_FILE=/opt/pong/users.conf
+ExecStart=/opt/pong/server 8080 /var/log/pong/server.log
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/var/log/pong
+UMask=0077
+TimeoutStopSec=10
+
+[Install]
+WantedBy=multi-user.target
