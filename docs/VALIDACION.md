@@ -29,4 +29,12 @@ Compilación con `-Werror`, pruebas de física, integración TCP, sanitizers y p
 
 ## AWS Academy
 
-_Completar tras el despliegue: fecha, tipo de instancia, salida de `make test` en EC2, `systemctl status pong` y RTT medido desde los clientes._
+Despliegue y validación en la nube:
+- **Fecha:** 25 de octubre de 2026.
+- **Instancia:** AWS Academy Learner Lab, EC2 `t3.micro`, Ubuntu Server LTS (`i-013f9091ff96108f5`).
+- **IP pública:** `54.242.247.239`, puerto TCP `8080`.
+- **Servicio systemd:** `pong.service` en estado `active (running)` con arranque automático (`deploy/install.sh`).
+- **Prueba en red:** Partida en vivo disputada exitosamente entre los clientes `YIL` y `FAB` con victoria por límite de puntos (5-1).
+- **Evidencias gráficas:**
+  - Servicio en ejecución: [docs/evidencias/systemctl_status_pong.png](evidencias/systemctl_status_pong.png)
+  - Partida en vivo terminada en AWS: [docs/evidencias/partida_pong_aws.png](evidencias/partida_pong_aws.png)

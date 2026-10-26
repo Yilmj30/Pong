@@ -115,9 +115,9 @@ Resultados en Ubuntu con gcc: ver [docs/VALIDACION.md](docs/VALIDACION.md).
 Los pasos están en [docs/AWS.md](docs/AWS.md): una instancia EC2 con Ubuntu, el puerto TCP 8080 abierto en el grupo de seguridad y el servidor instalado como servicio systemd.
 
 **Evidencias del despliegue:**
-- IP pública usada en la demostración: _completar_
-- Captura de `systemctl status pong`: _agregar en `docs/evidencias/`_
-- Captura de dos clientes jugando contra el servidor en AWS: _agregar en `docs/evidencias/`_
+- **IP pública en AWS:** `54.242.247.239` (Puerto `8080`, instancia EC2 `t3.micro` Ubuntu)
+- **Captura del servicio `systemctl status pong`:** [docs/evidencias/systemctl_status_pong.png](docs/evidencias/systemctl_status_pong.png)
+- **Captura de clientes jugando contra AWS:** [docs/evidencias/partida_pong_aws.png](docs/evidencias/partida_pong_aws.png)
 
 ## Conclusiones
 
