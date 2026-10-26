@@ -17,7 +17,7 @@ int game_step(Game *g, float dt) {
     if (g->p[i] > 550)
       g->p[i] = 550;
   }
-  /* Substeps prevent the ball from tunnelling through a paddle. */
+  /* Subpasos de fisica para evitar que la bola atraviese la paleta */
   for (int k = 0; k < 4; k++) {
     float old = g->x;
     g->x += g->vx * dt / 4;

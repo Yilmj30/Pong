@@ -2,7 +2,7 @@
 #define APP_H
 #include "game.h"
 #define CAP 256
-/* Domain events contain values, never encoded packets or socket descriptors. */
+/* Eventos de dominio con valores logicos, desacoplados de la red */
 typedef enum {
   EV_OK,
   EV_ERROR,

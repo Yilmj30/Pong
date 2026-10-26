@@ -1,4 +1,4 @@
-"""Real TCP integration tests; temporary users/logs, no production credentials."""
+"""Pruebas de integracion sobre sockets TCP reales."""
 import os
 import socket
 import struct

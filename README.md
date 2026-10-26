@@ -1,8 +1,8 @@
 # Pong en red — Proyecto N1, Internet: Arquitectura y Protocolos
 
 **Integrantes:**
-- _Nombre completo 1_
-- _Nombre completo 2_
+- Fabiola Valencia Barrios
+- Yilmer David Murillo Jordán
 
 ## Introducción
 

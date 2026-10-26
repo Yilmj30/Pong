@@ -1,4 +1,4 @@
-"""Run python3 client/pong.py. All mutable state belongs to PongClient."""
+"""Cliente grafico para Pong en red (Tkinter) usando el protocolo binario PGP."""
 import struct
 import time
 import tkinter as tk

@@ -1,4 +1,4 @@
-"""Binary PGP codec and TCP adapter. No game or UI dependencies."""
+"""Adaptador TCP con sockets Berkeley y codificador binario para PGP."""
 import socket
 import struct
 

@@ -68,7 +68,7 @@ static void packet(Server *s, int i, int type, const uint8_t *p, int n) {
   logline(s, "SEND client=%d type=0x%02x %s seq=%u len=%d", i, type,
           proto_type_name((uint8_t)type), h.seq, n);
 }
-/* Clamp snapshots while the ball is partially outside the field. */
+/* Limitar coordenadas enviadas para evitar desbordamiento */
 static uint16_t coordinate(float value) {
   if (value < 0)
     return 0;
